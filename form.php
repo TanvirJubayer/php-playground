@@ -18,8 +18,14 @@
         // echo "you added:" . $_POST["task"] ?? '';
 
         // echo "You typed: " . ($_POST['task'] ?? '');
-        
-        if (isset($_POST['task'])){
-            echo "you typed: " . $_POST['task'];
-        }
 
+        // if (isset($_POST['task'])){
+        //     echo "you typed: " . $_POST['task'];
+        // }
+
+        if (isset($_POST['task'])){
+            echo '<h4><p style="color: red">You added:</p></h4><h1 style="color: green">' . $_POST['task'] . '</h1>';
+
+            // echo "<p style=\"color:red\">You added: </p>" . $_POST['task'];
+
+        }
